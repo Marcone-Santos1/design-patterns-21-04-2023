@@ -7,10 +7,10 @@ use InvalidArgumentException;
 class User
 {
     public function __construct(
-        private readonly ?string $name,
-        private readonly string $email,
-        private readonly string $password,
-        private readonly ?int $age,
+        public readonly ?string $name,
+        public readonly string $email,
+        public readonly string $password,
+        public readonly ?int $age,
     )
     {
         $pattern = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
